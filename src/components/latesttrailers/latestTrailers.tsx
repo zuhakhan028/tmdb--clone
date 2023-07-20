@@ -29,6 +29,7 @@ return(
                         <div className={isActiveC ? "trailer-clicked" : "trailer-not-clicked"} onClick={(e) => { setSelected(2); setIsActiveA(false); setIsActiveB(false); setIsActiveC(true); setIsActiveD(false);}} ><h3 className="trailer-heading">For Rent</h3></div>
                         <div className={isActiveD ? "trailer-clicked" : "trailer-not-clicked"} onClick={(e) => { setSelected(3);setIsActiveA(false); setIsActiveB(false); setIsActiveC(false); setIsActiveD(true); }}><h3 className="trailer-heading">In Theatres</h3></div>
                     </div>
+                    
                         </div>
                     
                 </div>

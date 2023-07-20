@@ -1,9 +1,10 @@
 .welcome{
 width: 100%;
 font-size: 48px;
-font-weight: 600;
+font-weight: 700;
+line-height: 1;
 }
 .discover-tagline{
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 600;
 }

@@ -11,7 +11,8 @@ import { TodayContent } from './network/network';
 import Footer from './components/footer/footer';
 import trendingBackGroundImage from "./assets/images/logos/trendingbackground.svg"
 import LatestTrailers from './components/latesttrailers/latestTrailers';
-
+import WhatsPopular from './components/watspopular/whatsPopular';
+import WatchForFree from './components/watchforfree/watchForFree';
 
 
 function App() {
@@ -28,6 +29,8 @@ const todayContent=TodayContent()
         <Discover data={trending} />
         <Trending weeklydata={trending} todayContent={todayContent}/>
         <LatestTrailers data={todayContent}/>
+        <WhatsPopular weeklydata={trending} todayContent={todayContent}/>
+        <WatchForFree weeklydata={trending} todayContent={todayContent}/>
        
         </div>
       

@@ -41,4 +41,9 @@
 }
 .play-trailer{
     font-weight: 600;
+    cursor: pointer;
+   
+}
+.play-trailer:hover{
+    cursor: pointer;
 }

@@ -1,6 +1,4 @@
 .backdrop_image{
-    width: 98.90vw;
-    height: 525px;
     border-bottom: 1px solid var(--primaryColor);
     background-position: center;
     background-size: cover;
@@ -9,12 +7,12 @@
     justify-content: center;
     background-color:white;
     background-clip: border-box;
-    background-position-x: 258px;
-    background-position-y:30%;
-    background:  linear-gradient(to right, rgba(157.5, 178.5, 199.5, 1) calc((50vw - 170px) - 340px), rgba(157.5, 178.5, 199.5, 0.84) 50%, rgba(157.5, 178.5, 199.5, 0.84) 100%);
+    background-position-x: 100px;
 
-   
+}
 
+.backdrop-image-div{
+width: 100%;
 }
 .inner-hero-section{
     padding: 30px 40px;

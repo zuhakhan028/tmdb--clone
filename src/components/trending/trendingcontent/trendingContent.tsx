@@ -24,10 +24,24 @@ function TrendingContent(props: Props): any {
         )
 
     }
+    else if (props.selected == 2) {
+       
+        return (
+            <MovieCard  data={props.todayContent}/>
+        )
+
+    }
+    else if (props.selected == 3) {
+       
+        return (
+            <MovieCard  data={props.todayContent}/>
+        )
+
+    }
     else {
         return (<div>
             loading
         </div>)
     }
 }
-export default TrendingContent
+export default TrendingContent;

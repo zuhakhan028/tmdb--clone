@@ -23,8 +23,8 @@ const releaseYear=releaseDate(props.data.release_date)
         return (
 
             // <div className="backdrop_image" style={{backgroundImage:`url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces${props.data.backdrop_path})`}}>
-            
-            <div className="backdrop_image"  style={{backgroundImage:`linear-gradient(to right, rgba(32,11,11,.84) calc((50vw - 170px) - 340px), rgba(32,11,11,.84) 50%, rgba(32,11,11,.84) 50%),url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces${props.data.backdrop_path})`}}>
+            <div className="backdrop-image-div">
+                  <div className="backdrop_image"  style={{background:`linear-gradient(to right, rgba(32,11,11,.84) calc((50vw - 170px) - 340px), rgba(32,11,11,.84) 50%, rgba(32,11,11,.84) 50%),url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces${props.data.backdrop_path})` ,backgroundSize: "cover" ,backgroundPosition: "center"}}>
                 <div className="inner-hero-section">
                     <PosterImage data={props.data?.poster_path} />
                     <div className="right-section">
@@ -58,6 +58,8 @@ const releaseYear=releaseDate(props.data.release_date)
                 </div>
             </div>
 
+            </div>
+          
 
 
         )
