@@ -25,13 +25,48 @@ function PlayTrailer(props:props):any{
       },[])
     
 
-   if(key){
+//    if(key){
+//     key.results.map((eachTrailer:any)=>{
+//            if(key){
+//     return(
+//         <div>
+//  <iframe className="position-trailer-box"width="1080" height="607"src={`https://www.youtube.com/embed/${key.results[0].key}?autoplay=1`}></iframe>
+//         </div>
+//     )
+//    }
+//     })
+//     return(
+//         <div>
+//  <iframe className="position-trailer-box"width="1080" height="607"src={`https://www.youtube.com/embed/${key.results[0].key}?autoplay=1`}></iframe>
+//         </div>
+//     )
+//    }
+
+let keyVideo;
+if(key){
+    key.results.map((eachmovie:any)=>{
+        if(eachmovie.name=="Official Trailer" || eachmovie.type=="Trailer" ||eachmovie.official){
+           
+               return(
+                keyVideo=eachmovie.key
+               )
+            
+        }
+        })
+            return (
+               <div className="trailer-frame">
+                <div className="trailer-title">Play Trailer</div>
+                <iframe className="position-trailer-box"width="1080"  height="620"src={`https://www.youtube.com/embed/${keyVideo}`}></iframe>
+               </div>
+                
+            )
+         
+}else{
     return(
-        <div>
- <iframe className="position-trailer-box"width="1080" height="607"src={`https://www.youtube.com/embed/${key.results[0].key}?autoplay=1`}></iframe>
-        </div>
+        <div></div>
     )
-   }
+}
+
 
 }
 export default PlayTrailer
